@@ -1,5 +1,6 @@
 package com.example.sensor_p2_8;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonLight, buttonPressure, buttonProximity, buttonMagnetic;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
